@@ -13,5 +13,5 @@ def send_wechat(msg):
  
 if __name__ == '__main__':
     today = datetime.datetime.now().strftime('%Y-%m-%d')
-    msg = f'{today} 周日，深圳，卓越intown'
+    msg = f'{today} 点饭啦点饭啦～🍜🍚🌽🍔'
     send_wechat(msg)
