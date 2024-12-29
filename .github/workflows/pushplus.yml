@@ -2,7 +2,7 @@ name: PushPlus Notification
 
 on:
   schedule:
-    - cron: '0 14 * * 0' # 每周日12点执行
+    - cron: '0 15 * * 0' # 每周日15点执行
   workflow_dispatch: # 添加手动触发事件
 
 jobs:
