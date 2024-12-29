@@ -15,5 +15,10 @@ def send_wechat(token, title, content):
 if __name__ == '__main__':
     title = "每周通知"
     token = "5c722f6c8bf441f88387b8e37e2e846c"
-    content = "今天是周五，点饭啦点饭啦～🍜🍚🌽🍔"
+    
+    # 使用 HTML 格式化内容
+    content = """
+    <h1>点饭啦点饭啦～ 🍜🍚🌽🍔</h1>
+    """.format(date=datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"))
+    
     send_wechat(token, title, content)
